@@ -10,6 +10,9 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+app.disable('x-powered-by');
+// app.disable('etag')
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
